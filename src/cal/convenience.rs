@@ -7,7 +7,7 @@
 //! use datetime::convenience::Today;
 //! let today:LocalDate = LocalDate::today();
 //! ```
-use cal::datetime::{LocalDate,LocalDateTime};
+use crate::cal::datetime::{LocalDate,LocalDateTime};
 
 /// Adds `LocalDate::today() -> LocalDate`
 pub trait Today{

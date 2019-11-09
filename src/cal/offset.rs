@@ -3,11 +3,11 @@
 use std::error::Error as ErrorTrait;
 use std::fmt;
 
-use duration::Duration;
-use cal::{DatePiece, TimePiece};
-use cal::datetime::{LocalDateTime, Month, Weekday, Error as DateTimeError};
-use cal::fmt::ISO;
-use util::RangeExt;
+use crate::duration::Duration;
+use crate::cal::{DatePiece, TimePiece};
+use crate::cal::datetime::{LocalDateTime, Month, Weekday, Error as DateTimeError};
+use crate::cal::fmt::ISO;
+use crate::util::RangeExt;
 
 
 #[derive(PartialEq, Copy, Clone)]
@@ -234,7 +234,7 @@ mod test {
 
     #[test]
     fn debug_offset_date_time() {
-        use cal::{LocalDate, LocalTime, LocalDateTime, Month};
+        use crate::cal::{LocalDate, LocalTime, LocalDateTime, Month};
 
         let offset = Offset::of_seconds(25 * 60 + 21).unwrap();
 

@@ -5,7 +5,7 @@ use std::io;
 use std::io::Write;
 use std::str::CharIndices;
 
-use cal::{DatePiece, TimePiece};
+use crate::cal::{DatePiece, TimePiece};
 
 use locale;
 use num_traits::PrimInt;

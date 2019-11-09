@@ -3,8 +3,8 @@
 use std::fmt;
 use std::ops::{Add, Sub};
 
-use system::sys_time;
-use duration::Duration;
+use crate::system::sys_time;
+use crate::duration::Duration;
 
 
 /// An **instant** is an exact point on the timeline, irrespective of time

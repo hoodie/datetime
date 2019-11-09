@@ -22,23 +22,23 @@ extern crate iso8601;
 
 
 mod cal;
-pub use cal::{DatePiece, TimePiece};
-pub use cal::datetime::{LocalDate, LocalTime, LocalDateTime, Month, Weekday, Year, YearMonth};
-pub use cal::fmt::custom as fmt;
-pub use cal::fmt::ISO;  // TODO: replace this with just a 'fmt' import
-pub use cal::offset::{Offset, OffsetDateTime};
-pub use cal::zone::{TimeZone, ZonedDateTime};
-pub use cal::zone as zone;
+pub use crate::cal::{DatePiece, TimePiece};
+pub use crate::cal::datetime::{LocalDate, LocalTime, LocalDateTime, Month, Weekday, Year, YearMonth};
+pub use crate::cal::fmt::custom as fmt;
+pub use crate::cal::fmt::ISO;  // TODO: replace this with just a 'fmt' import
+pub use crate::cal::offset::{Offset, OffsetDateTime};
+pub use crate::cal::zone::{TimeZone, ZonedDateTime};
+pub use crate::cal::zone as zone;
 
-pub use cal::convenience;
+pub use crate::cal::convenience;
 
 mod duration;
-pub use duration::Duration;
+pub use crate::duration::Duration;
 
 mod instant;
-pub use instant::Instant;
+pub use crate::instant::Instant;
 
 mod system;
-pub use system::sys_timezone;
+pub use crate::system::sys_timezone;
 
 mod util;

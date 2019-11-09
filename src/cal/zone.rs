@@ -3,10 +3,10 @@
 use std::borrow::Cow;
 use std::sync::Arc;
 
-use duration::Duration;
-use instant::Instant;
-use cal::{LocalDateTime, DatePiece, TimePiece, Month, Weekday};
-use util::RangeExt;
+use crate::duration::Duration;
+use crate::instant::Instant;
+use crate::cal::{LocalDateTime, DatePiece, TimePiece, Month, Weekday};
+use crate::util::RangeExt;
 
 
 /// A **time zone**, which here is a list of timespans, each containing a

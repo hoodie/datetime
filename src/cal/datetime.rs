@@ -8,12 +8,12 @@ use std::ops::Deref;
 use std::ops::{Range, RangeFrom, RangeTo, RangeFull};
 use std::slice::Iter as SliceIter;
 
-use cal::{DatePiece, TimePiece};
-use cal::fmt::ISO;
-use duration::Duration;
-use instant::Instant;
-use system::sys_time;
-use util::RangeExt;
+use crate::cal::{DatePiece, TimePiece};
+use crate::cal::fmt::ISO;
+use crate::duration::Duration;
+use crate::instant::Instant;
+use crate::system::sys_time;
+use crate::util::RangeExt;
 
 use self::Month::*;
 use self::Weekday::*;
@@ -1154,7 +1154,7 @@ impl Weekday {
 #[cfg(test)]
 mod test {
     pub use super::{LocalDateTime, LocalDate, LocalTime, Month, Weekday, Year};
-    pub use cal::DatePiece;
+    pub use crate::cal::DatePiece;
     pub use std::str::FromStr;
 
 
